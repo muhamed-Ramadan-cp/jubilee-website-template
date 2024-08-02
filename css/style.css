@@ -1,0 +1,383 @@
+:root {
+  --primary-color: #4cc082;
+  --light-primary-color: #e2f3f0;
+  --secondary-color: #ec6c5a;
+  --light-secondary-color: #ffe9e5;
+  --tertiary-color: #ffeed3;
+  --dark-color: #31333a;
+  --light-color: #ffffff;
+  --grey-color: #bbc7d4;
+  --light-dark-color: #727272;
+  --light-grey-color: #f5f5f5;
+  --bs-link-color: var(--dark-color);
+  --bs-link-hover-color: var(--dark-color);
+
+  --bs-link-color-rgb: 40, 40, 40;
+  --bs-link-hover-color-rgb: 0, 0, 0;
+
+  --bs-light-rgb: 248, 248, 248;
+
+  --bs-font-sans-serif: var(var(--body-font));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.3rem;
+  --bs-body-color: var(--dark-color);
+
+  --bs-primary: #4cc082;
+  --bs-primary-rgb: 76, 192, 130;
+  --bs-primary-bg-subtle: #e2f3f0;
+
+  --bs-border-color: #f7f7f7;
+
+  --bs-secondary: #ec6c5a;
+  --bs-secondary-rgb: 236, 108, 90;
+  --bs-secondary-bg-subtle: #ffe9e5;
+
+  --bs-tertiary: #f8be60;
+  --bs-tertiary-bg-subtle: #ffeed3;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--dark-color);
+  --bs-btn-border-color: var(--dark-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #212529;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--dark-color);
+  --bs-btn-active-border-color: var(--dark-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--dark-color);
+  --bs-btn-disabled-border-color: var(--dark-color);
+}
+
+.btn-primary {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 60px;
+  transition: all 0.3s ease-in;
+  border: none;
+  background-color: var(--primary-color);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-outline-primary:hover {
+  background-color: #4cc082;
+  box-shadow: inset 3px 5px 20px rgba(0, 0, 0, 0.125);
+}
+.btn-outline-primary {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 60px;
+  transition: all 0.3s ease-in;
+  background-color: var(--primary-color);
+}
+
+.btn-outline-dark {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.btn-dark {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+.padding-large {
+  padding-top: 18rem;
+  padding-bottom: 14rem;
+}
+
+.padding-medium {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.padding-medium-2 {
+  padding-top: 11rem;
+  padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  .padding-large {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .padding-medium {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .padding-medium-2 {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+  }
+}
+.navbar {
+  background-color: var(--light-color);
+  height: 10vh;
+}
+/*----- Feature Section Style -------------------------*/
+
+.feature-item {
+  box-shadow: 4px 4px 10px rgba(150, 150, 150, 0.192);
+  background: var(--light-color);
+  cursor: pointer;
+}
+
+.feature-item:hover {
+  background: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.feature-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in;
+}
+
+.feature-info {
+  transition: all 0.3s ease-in;
+}
+
+.feature-item:hover .feature-info,
+.feature-item:hover .feature-title {
+  color: var(--light-color);
+}
+@media only screen and (min-width: 1400px) {
+  #features {
+    position: relative;
+  }
+
+  .feature-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .feature-box {
+    margin-top: 120px;
+  }
+}
+.about svg,
+.points svg {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 0.25rem 0.3rem;
+}
+/*----- catergory Section Style -------------------------*/
+.category-paragraph {
+  transition: all 0.3s ease-in;
+}
+
+.primary {
+  background: var(--bs-primary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+.svg-primary {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.primary:hover {
+  background: var(--bs-primary);
+}
+
+.secondary {
+  background: var(--bs-secondary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+.svg-secondary {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in;
+}
+
+.secondary:hover {
+  background: var(--bs-secondary);
+}
+
+.tertiary {
+  background: var(--bs-tertiary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+.svg-tertiary {
+  color: var(--bs-tertiary);
+  transition: all 0.3s ease-in;
+}
+
+.tertiary:hover {
+  background: var(--bs-tertiary);
+}
+
+.gray {
+  background: #e0e5eb;
+  transition: all 0.3s ease-in;
+}
+
+.svg-gray {
+  color: var(--bs-gray);
+  transition: all 0.3s ease-in;
+}
+
+.gray:hover {
+  background: var(--bs-gray);
+}
+
+.primary:hover .svg-primary,
+.primary:hover .category-paragraph,
+.secondary:hover .svg-secondary,
+.secondary:hover .category-paragraph,
+.tertiary:hover .svg-tertiary,
+.tertiary:hover .category-paragraph,
+.gray:hover .svg-gray,
+.gray:hover .category-paragraph {
+  color: var(--light-color);
+}
+.reviews {
+  background-color: var(--light-primary-color);
+}
+
+/*----- courses Section Style -------------------------*/
+h5.course-title {
+  transition: all 0.3s ease-in;
+}
+
+h5.course-title:hover {
+  color: var(--primary-color);
+}
+
+/*----- testimonial Section Style -------------------------*/
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--bs-primary);
+  background: var(--bs-primary);
+}
+/*----- teacher Section Style -------------------------*/
+.team-member ul.social-links {
+  top: 0;
+}
+.team-member ul li {
+  padding: 8px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transform: rotatey(-90deg);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+}
+.team-member ul li:first-of-type {
+  transition-delay: 0.3s;
+}
+
+.team-member ul li:nth-of-type(2) {
+  transition-delay: 0.6s;
+}
+
+.team-member ul li:nth-of-type(3) {
+  transition-delay: 0.9s;
+}
+
+.team-member ul li:last-of-type {
+  transition-delay: 1.3s;
+}
+
+.team-member:hover ul li {
+  transform: rotatey(0deg);
+}
+/* Zoom Effect*/
+
+.zoom-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-effect img {
+  max-width: 100%;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+.zoom-effect:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.zoom-effect:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.zoom-effect:hover:before {
+  opacity: 1;
+  cursor: pointer;
+}
+/*----- register Section Style -------------------------*/
+.register {
+  background: var(--tertiary-color);
+}
+
+/*----- footer Section Style -------------------------*/
+a.footer-link:hover {
+  color: var(--primary-color);
+}
+
+svg.social-icon {
+  color: var(--light-dark-color);
+  transition: all 0.3s ease-in;
+}
+
+svg.social-icon:hover {
+  color: var(--primary-color);
+}
