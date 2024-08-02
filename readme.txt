@@ -37,9 +37,6 @@ This HTML file serves as a foundation for building a complete website landing pa
 
 Contributions to this project are welcome. Feel free to fork the repository and submit pull requests with improvements or new features.
 
-**License:**
-
-This project is licensed under the [Choose a license, e.g., MIT].
 
 **Additional Notes:**
 
@@ -48,4 +45,3 @@ This project is licensed under the [Choose a license, e.g., MIT].
 - Improve accessibility by adding appropriate ARIA attributes and semantic HTML elements.
 - Test the website on different devices and browsers to ensure compatibility.
 
-**Remember to replace the placeholders with your actual content and customize the README to fit your specific project.**
