@@ -39,6 +39,16 @@ Contributions to this project are welcome. Feel free to fork the repository and 
 
 
 **Additional Notes:**
+<!-- Copy-paste in your Readme.md file -->
+
+<a href="https://next.ossinsight.io/widgets/official/compose-org-code-changes-top-repositories?owner_id=11855343&period=past_90_days" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-org-code-changes-top-repositories/thumbnail.png?owner_id=11855343&period=past_90_days&image_size=3x6&color_scheme=dark" width="561" height="auto">
+    <img alt="Ranking of repos with the commit code changes in pingcap" src="https://next.ossinsight.io/widgets/official/compose-org-code-changes-top-repositories/thumbnail.png?owner_id=11855343&period=past_90_days&image_size=3x6&color_scheme=light" width="561" height="auto">
+  </picture>
+</a>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
 - Consider using a CSS preprocessor like Sass or Less for more efficient styling.
 - Optimize images for faster loading times.
